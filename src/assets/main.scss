@@ -1,21 +1,30 @@
 @import './base.scss';
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  width: 100%;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+a {
+  text-decoration: none;
+  color: transparent;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+@media (hover: hover) {
+  a:hover {
+    background-color: transparent;
   }
 }
+
+.icon {
+  cursor: pointer;
+  #path-1 {
+    stroke: var(--color-background-oposite);
+  }
+  #path-2 {
+    fill: var(--color-background-oposite);
+  }
+  #path-3 {
+    fill: var(--color-background);
+  }
+}
+
