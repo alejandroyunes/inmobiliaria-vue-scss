@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import './desktop-component.scss'
+import './desktop-header.scss'
 import Menu from './menu/MenuComponent.vue'
 import SunSvg from '@/icons/header/SunSvg.vue'
 import MoonSvg from '@/icons/header/MoonSvg.vue'
@@ -27,8 +27,13 @@ const { isDarkMode, handleTheme } = defineProps<Props>()
     </div>
 
     <div class="right">
-      <MoonSvg v-show="!isDarkMode" @click="handleTheme" class="icon sun" />
-      <SunSvg v-show="isDarkMode" @click="handleTheme" class="icon moon" />
+      <div class="dark-mode-icons">
+        <MoonSvg v-show="!isDarkMode" @click="handleTheme" class="icon sun" />
+        <SunSvg v-show="isDarkMode" @click="handleTheme" class="icon moon" />
+      </div>
+      <div>
+        <p>hello</p>
+      </div>
     </div>
 
   </nav>

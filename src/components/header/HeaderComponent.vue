@@ -3,8 +3,8 @@ import './header-component.scss'
 import { ref } from 'vue'
 
 import { setDarkMode } from '@/utils/utils'
-import Desktop from './desktop/DesktopComponent.vue'
-import Mobile from './mobile/MobileComponent.vue'
+import Desktop from './desktop/DesktopHeader.vue'
+import Mobile from './mobile/MobileHeader.vue'
 
 const isDarkMode = ref(localStorage.getItem('isDarkMode') === 'true')
 setDarkMode(isDarkMode.value)

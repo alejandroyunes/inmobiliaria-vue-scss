@@ -32,8 +32,10 @@
 .right {
   display: flex;
   align-items: center;
-  .sun,
-  .moon {
-    margin-right: 10px;
+  .dark-mode-icons {
+    .sun,
+    .moon {
+      margin-right: 10px;
+    }
   }
 }

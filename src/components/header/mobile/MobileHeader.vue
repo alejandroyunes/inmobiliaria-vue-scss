@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import './mobile-header.scss'
 </script>
 
 <template>
