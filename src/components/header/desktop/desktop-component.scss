@@ -1,0 +1,39 @@
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 10px 20px 0;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .capital {
+    font-size: 24px;
+    color: var(--color-heading);
+  }
+
+  .invest {
+    margin-right: 10px;
+    font-size: 24px;
+    color: var(--primary);
+    font-weight: bold;
+  }
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  .sun,
+  .moon {
+    margin-right: 10px;
+  }
+}
