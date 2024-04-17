@@ -22,7 +22,7 @@ const toggleRightNav = () => {
 </script>
 
 <template>
-  <nav class="outer">
+  <nav class="desktop-container">
     <div class="left">
       <router-link to="/" class="link">
         <p class="capital">

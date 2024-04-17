@@ -1,4 +1,4 @@
-.container {
+.right-nav-container {
   position: fixed;
   top: 0;
   right: -30vw;
@@ -8,116 +8,120 @@
   height: 100%;
   border-left: 2px solid var(--color-border);
   will-change: transform;
-  background-color: var(--color-background-oposite);
+  background-color: var(--color-background);
 
   &.slide-in {
     animation: slideIn 0.5s forwards;
-    z-index: 101;
+    z-index: 100;
   }
 
   &.slide-out {
     animation: slideOut 0.5s forwards;
-    z-index: 200;
+    z-index: 100;
   }
 
   @media (max-width: 900px) {
     right: -80vw;
     width: 80vw;
   }
-}
 
-.header {
-  display: flex;
-  padding-left: 18px;
+  .header {
+    display: flex;
+    padding-left: 18px;
+    font-size: 24px;
 
-  .capital {
-    font-size: 18px;
-    margin-top: 10px;
+    .title {
+      margin-top: 48px;
+      color: var(--color-heading);
+    }
+
+    .title-strong {
+      color: var(--primary);
+      font-weight: bold;
+    }
   }
 
-  .invest {
-    font-size: 18px;
-    color: var(--primary);
-    font-weight: bold;
+  .animation-exit {
+    display: flex;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    background-color: var(--gray-soft);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
   }
-}
 
-.animation-exit {
-  display: flex;
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  cursor: pointer;
-  background-color: var(--gray-soft);
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 16px;
-}
+  .right-nav-content {
+    display: grid;
+    align-items: center;
+    height: 100%;
+  }
 
-.content {
-  display: grid;
-  align-items: center;
-  height: 100%;
-}
-
-.body {
-  font-size: 16px;
-  color: var(--color-background-oposite);
-  list-style-type: none;
-  padding-left: 20px;
-
-  @media (max-width: 1024px) {
+  .list {
+    font-size: 16px;
+    list-style-type: none;
     padding-left: 20px;
-  }
-}
 
-.items {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.svg {
-  background-color: null;
-
-  &:hover {
-    background-color: var(--primary);
+    @media (max-width: 1024px) {
+      padding-left: 20px;
+    }
   }
 
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: var(--color-heading);
+    cursor: pointer;
+    &:hover {
+      color: var(--primary);
+    }
+  }
 
-.paragrah {
-  font-size: 18px;
-  margin-left: 18px;
-}
+  .svg {
+    background-color: var(--color-background-oposite);
+    width: 49px;
+    height: 49px;
+    cursor: pointer;
+  }
 
-.contact {
-  border-top: 1px solid var(--color-border);
-  width: 100%;
-  display: grid;
-  padding-bottom: 8px;
-  padding-top: 8px;
-}
+  .paragrah {
+    font-size: 18px;
+    margin-left: 18px;
+  }
 
-.contact-tel {
-  padding-left: 18px;
-  font-size:18px;
-  color: var(--color-background-oposite);
-  font-weight: bold;
-  padding-top: 8px;
-}
+  .contact {
+    border-top: 1px solid var(--color-border);
+    width: 100%;
+    display: grid;
+    padding-bottom: 8px;
+    padding-top: 8px;
 
-.contact-email {
-  padding-left: 18px;
-  font-size: 18px;
-  color: var(--gray-soft);
-  padding-top: 20px;
+    .contact-tel {
+      padding-left: 18px;
+      padding-top: 8px;
+
+      a {
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    .contact-email {
+      padding-top: 20px;
+      padding-left: 18px;
+      a {
+        font-size: 18px;
+        color: var(--color-heading);
+      }
+    }
+  }
 }
 
 .bg {
@@ -128,20 +132,34 @@
   height: 100vh;
   background-color: rgba(20, 22, 27, 0.5);
   animation: fadeIn 0.5s forwards;
-  z-index: 100;
+  z-index: 99;
 }
 
 @keyframes slideIn {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 @keyframes slideOut {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(0%); }
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @keyframes fadeIn {
-  0% { visibility: hidden; opacity: 0; }
-  100% { visibility: visible; opacity: 1; }
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
