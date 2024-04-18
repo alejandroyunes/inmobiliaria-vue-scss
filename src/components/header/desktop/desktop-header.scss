@@ -5,13 +5,29 @@
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 10px 20px 0;
+
+  .desktop-only {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .mobile-only {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 }
 
 .left {
   display: flex;
   align-items: center;
+  
+  .hamburger {
+    margin-right: 10px;
+  }
 
   .link {
+    display: inline-flex;
     text-decoration: none;
     color: inherit;
   }
@@ -19,6 +35,7 @@
   .capital {
     font-size: 24px;
     color: var(--color-heading);
+    padding-right: 10px;
   }
 
   .invest {

@@ -1,10 +1,8 @@
 <script lang="ts" setup>
-import './header-component.scss'
 import { ref } from 'vue'
 
 import { setDarkMode } from '@/utils/utils'
 import Desktop from './desktop/DesktopHeader.vue'
-import Mobile from './mobile/MobileHeader.vue'
 
 const isDarkMode = ref(localStorage.getItem('isDarkMode') === 'true')
 setDarkMode(isDarkMode.value)
@@ -17,15 +15,7 @@ const handleTheme = () => {
 </script>
 
 <template>
-
-  <div class="desktop">
-    <Desktop :handleTheme="handleTheme" :isDarkMode="isDarkMode" />
-  </div>
-
-  <div class="mobile">
-    <Mobile />
-  </div>
-
+  <Desktop :handleTheme="handleTheme" :isDarkMode="isDarkMode" />
 </template>
 
 <style lang="scss" scoped></style>
