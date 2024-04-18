@@ -11,17 +11,17 @@ import './menu-component.scss'
         </router-link>
       </li>
       <li class="menu-item">
-        <router-link to="/about" class="link">
+        <router-link to="/" class="link">
           <span class="menu-span">About</span>
         </router-link>
       </li>
       <li class="menu-item">
-        <router-link to="/services" class="link">
+        <router-link to="/" class="link">
           <span class="menu-span">Services</span>
         </router-link>
       </li>
       <li class="menu-item">
-        <router-link to="/contact" class="link">
+        <router-link to="/" class="link">
           <span class="menu-span">Contact</span>
         </router-link>
       </li>

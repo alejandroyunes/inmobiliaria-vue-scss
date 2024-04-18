@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import './right-nav.scss'
+import './top-nav.scss'
 import Twitter from '@/components/icons/social-media/TwitterSvg.vue'
 import ExitSvg from '@/components/icons/ExitSvg.vue'
 import Youtube from '@/components/icons/social-media/YoutubeSvg.vue'
@@ -7,25 +7,26 @@ import Facebook from '@/components/icons/social-media/FacebookSvg.vue'
 import Instagram from '@/components/icons/social-media/InstagramSvg.vue'
 
 interface Props {
-  toggleRightNav: () => void
-  isRightNavOpen: boolean | undefined
+  toggleTopNav: () => void
+  isTopNavOpen: boolean | undefined
 }
 
-const { toggleRightNav, isRightNavOpen } = defineProps<Props>()
+const { toggleTopNav, isTopNavOpen } = defineProps<Props>()
 
 </script>
 
 <template>
-  <div :class="['right-nav-container', isRightNavOpen ? 'right-slide-in' : '', isRightNavOpen === false ? 'right-slide-out' : '']">
+
+  <div :class="['top-nav-container', isTopNavOpen ? 'top-slide-in' : '', isTopNavOpen === false ? 'top-slide-out' : '']">
     <div class="header">
       <p class="title">Estrella <span class="title-strong">Immobilien</span></p>
 
-      <div @click="toggleRightNav" class="animation-exit">
+      <div @click="toggleTopNav" class="animation-exit">
         <ExitSvg class=" exit-icon" />
       </div>
     </div>
 
-    <div class="right-nav-content">
+    <div class="top-nav-content">
       <ul class="list">
         <li class="item">
           <span class="svg">
@@ -62,5 +63,5 @@ const { toggleRightNav, isRightNavOpen } = defineProps<Props>()
     </div>
   </div>
 
-  <div v-if="isRightNavOpen" @click="toggleRightNav" class="right-nav-bg" ></div>
+  <div v-if="isTopNavOpen" @click="toggleTopNav" class="top-nav-bg"></div>
 </template>

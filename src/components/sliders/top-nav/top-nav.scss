@@ -1,8 +1,8 @@
-.right-nav-container {
+.top-nav-container {
   position: fixed;
-  top: 0;
-  right: -30vw;
-  width: 30vw;
+  top: -100%;
+  left: 0;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -10,13 +10,13 @@
   will-change: transform;
   background-color: var(--color-background);
 
-  &.right-slide-in {
-    animation: rightSlideIn 0.5s forwards;
+  &.top-slide-in {
+    animation: topSlideIn 0.5s forwards;
     z-index: 100;
   }
 
-  &.right-slide-out {
-    animation: rightSlideOut 0.5s forwards;
+  &.top-slide-out {
+    animation: topSlideOut 0.5s forwards;
     z-index: 100;
   }
 
@@ -59,7 +59,7 @@
     }
   }
 
-  .right-nav-content {
+  .top-nav-content {
     display: grid;
     align-items: center;
     height: 100%;
@@ -123,21 +123,21 @@
     }
   }
 
-  @keyframes rightSlideIn {
+  @keyframes topSlideIn {
     0% {
-      transform: translateX(0%);
+      transform: translateY(-100%);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateY(100%);
     }
   }
 
-  @keyframes rightSlideOut {
+  @keyframes topSlideOut {
     0% {
-      transform: translateX(-100%);
+      transform: translateY(100%);
     }
     100% {
-      transform: translateX(0%);
+      transform: translateY(-100%);
     }
   }
 
@@ -153,7 +153,7 @@
   }
 }
 
-.right-nav-bg {
+.top-nav-bg {
   position: fixed;
   width: 100vw;
   left: 0;

@@ -1,10 +1,19 @@
 <script lang="ts" setup>
+import './header-component.scss'
 import { ref } from 'vue'
-
 import { setDarkMode } from '@/utils/utils'
-import Desktop from './desktop/DesktopHeader.vue'
+import Menu from './menu/MenuComponent.vue'
+import RightNav from '@/components/sliders/right-nav/RightNav.vue'
+import TopNav from '@/components/sliders/top-nav/TopNav.vue'
+import SunSvg from '@/components/icons/header/SunSvg.vue'
+import MoonSvg from '@/components/icons/header/MoonSvg.vue'
+import HamburgerMenu from '@/components/icons/header/HamburgerSvg.vue'
+import HamburgerVerticalSvg from '@/components/icons/header/HamburgerVerticalSvg.vue'
 
 const isDarkMode = ref(localStorage.getItem('isDarkMode') === 'true')
+const isRightNavOpen = ref<boolean | undefined>(undefined)
+const isTopNavOpen = ref<boolean | undefined>(undefined)
+
 setDarkMode(isDarkMode.value)
 
 const handleTheme = () => {
@@ -12,10 +21,42 @@ const handleTheme = () => {
   setDarkMode(isDarkMode.value)
 }
 
+const toggleRightNav = () => {
+  isRightNavOpen.value = !isRightNavOpen.value
+}
+
+const toggleTopNav = () => {
+  isTopNavOpen.value = !isTopNavOpen.value
+}
+
 </script>
 
 <template>
-  <Desktop :handleTheme="handleTheme" :isDarkMode="isDarkMode" />
-</template>
+  <nav class="desktop-container">
+    <div class="header-left">
+      <HamburgerMenu @click="toggleTopNav" class="icon mobile-only hamburger" />
+      <TopNav :toggleTopNav="toggleTopNav" :isTopNavOpen="isTopNavOpen" />
+      
+      <router-link to="/" class="link">
+        <span class="capital">Estrella</span>
+        <span class="invest">Immobilien</span>
+        <span class="invest desktop-only">GmbH</span>
+      </router-link>
+      <div>
+        <Menu class="desktop-only" />
+      </div>
+    </div>
 
-<style lang="scss" scoped></style>
+    <div class="header-right">
+      <div class="dark-mode-icons">
+        <MoonSvg v-if="!isDarkMode" @click="handleTheme" class="icon sun" />
+        <SunSvg v-else @click="handleTheme" class="icon moon" />
+      </div>
+      <div>
+        <HamburgerVerticalSvg @click="toggleRightNav" class="icon desktop-only" />
+        <RightNav :toggleRightNav="toggleRightNav" :isRightNavOpen="isRightNavOpen" />
+      </div>
+    </div>
+
+  </nav>
+</template>
