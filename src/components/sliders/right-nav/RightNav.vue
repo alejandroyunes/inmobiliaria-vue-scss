@@ -28,7 +28,7 @@ const closeMenu = () => {
       <p class="title">Estrella <span class="title-strong">Immobilien</span></p>
 
       <div @click="closeMenu" class="animation-exit">
-        <ExitSvg class="icon" />
+        <ExitSvg class=" exit-icon" />
       </div>
     </div>
 
@@ -36,7 +36,7 @@ const closeMenu = () => {
       <ul class="list">
         <li class="item">
           <span class="svg">
-            <Facebook />
+            <Facebook class="icon" />
           </span>
           <p class="paragrah">Facebook</p>
         </li>

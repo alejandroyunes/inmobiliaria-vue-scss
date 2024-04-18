@@ -54,71 +54,71 @@
     width: 40px;
     height: 40px;
     margin-bottom: 16px;
+    .exit-icon {
+      fill: var(--white);
+    }
   }
 
   .right-nav-content {
     display: grid;
     align-items: center;
     height: 100%;
-  }
-
-  .list {
-    font-size: 16px;
-    list-style-type: none;
-    padding-left: 20px;
-
-    @media (max-width: 1024px) {
+    .list {
+      font-size: 16px;
+      list-style-type: none;
       padding-left: 20px;
-    }
-  }
 
-  .item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    color: var(--color-heading);
-    cursor: pointer;
-    &:hover {
-      color: var(--primary);
-    }
-  }
+      @media (max-width: 1024px) {
+        padding-left: 20px;
+      }
+      .item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        color: var(--color-heading);
+        cursor: pointer;
+        &:hover {
+          color: var(--primary);
+        }
+      }
 
-  .svg {
-    background-color: var(--color-background-oposite);
-    width: 49px;
-    height: 49px;
-    cursor: pointer;
-  }
+      .svg {
+        background-color: var(--white);
+        width: 49px;
+        height: 49px;
+        cursor: pointer;
+      }
 
-  .paragrah {
-    font-size: 18px;
-    margin-left: 18px;
-  }
-
-  .contact {
-    border-top: 1px solid var(--color-border);
-    width: 100%;
-    display: grid;
-    padding-bottom: 8px;
-    padding-top: 8px;
-
-    .contact-tel {
-      padding-left: 18px;
-      padding-top: 8px;
-
-      a {
+      .paragrah {
         font-size: 18px;
-        color: white;
-        font-weight: bold;
+        margin-left: 18px;
       }
     }
+    .contact {
+      border-top: 1px solid var(--color-border);
+      width: 100%;
+      display: grid;
+      padding-bottom: 8px;
+      padding-top: 8px;
 
-    .contact-email {
-      padding-top: 20px;
-      padding-left: 18px;
-      a {
-        font-size: 18px;
-        color: var(--color-heading);
+      .contact-tel {
+        padding-left: 18px;
+        padding-top: 8px;
+
+        a {
+          font-size: 18px;
+          color: var(--color-heading);
+          font-weight: bold;
+        }
+      }
+
+      .contact-email {
+        padding-top: 20px;
+        padding-left: 18px;
+        a {
+          font-size: 18px;
+          color: var(--color-heading);
+        }
       }
     }
   }
