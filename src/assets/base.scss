@@ -12,7 +12,7 @@
 
   --gray-dark: #262424;
   --gray-soft: rgb(77, 76, 76);
-  --gray-mute: #f2f2f2;
+  --gray-mute: #d4d1d1;
 
   --divider-light-1: rgba(60, 60, 60, 0.29);
   --divider-light-2: rgba(60, 60, 60, 0.12);
@@ -45,6 +45,8 @@
   --color-heading: var(--text-light-1);
   --color-text: var(--text-light-2);
 
+  --color-hover: var(--gray-mute);
+
 }
 
 :root[data-color-scheme='dark'] {
@@ -62,7 +64,7 @@
   --color-heading: var(--text-dark-1);
   --color-text: var(--text-dark-2);
 
-
+  --color-hover: var(--black-mute);
 }
 
 *,

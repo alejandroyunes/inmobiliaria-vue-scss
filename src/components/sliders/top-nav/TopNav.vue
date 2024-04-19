@@ -58,7 +58,7 @@ const { toggleTopNav, isTopNavOpen } = defineProps<Props>()
 
         <div class="social-list">
           <span class="svg">
-            <Facebook class="icon" />
+            <Facebook />
           </span>
 
           <span class="svg">

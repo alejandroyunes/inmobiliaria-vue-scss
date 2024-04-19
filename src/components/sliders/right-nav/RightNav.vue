@@ -31,25 +31,25 @@ const { toggleRightNav, isRightNavOpen } = defineProps<Props>()
           <span class="svg">
             <Facebook class="icon" />
           </span>
-          <p class="paragrah">Facebook</p>
+          <p class="link">Facebook</p>
         </li>
         <li class="item">
           <span class="svg">
             <Instagram />
           </span>
-          <p class="paragrah">Instagram</p>
+          <p class="link">Instagram</p>
         </li>
         <li class="item">
           <span class="svg">
             <Twitter />
           </span>
-          <p class="paragrah">Twitter</p>
+          <p class="link">Twitter</p>
         </li>
         <li class="item">
           <span class="svg">
             <Youtube />
           </span>
-          <p class="paragrah">Youtube</p>
+          <p class="link">Youtube</p>
         </li>
       </ul>
 
