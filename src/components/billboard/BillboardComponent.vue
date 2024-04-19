@@ -23,7 +23,7 @@ import ArrowDownSvg from '../icons/ArrowDownSvg.vue';
       <div class="billboard-arrow">
         <div class="arrow-rotate">
           <div class="arrow">
-            <ArrowDownSvg />
+            <ArrowDownSvg class="icon" />
           </div>
         </div>
       </div>

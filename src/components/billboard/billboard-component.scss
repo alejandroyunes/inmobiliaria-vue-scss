@@ -6,6 +6,10 @@
   max-width: var(--max-width);
   padding: 0 24px;
   gap: 24px;
+
+  @media (max-width: 768px) {
+    gap: 16px;
+  }
 }
 
 .billboard-left {
@@ -112,7 +116,7 @@
     }
 
     @media (max-width: 400px) {
-      width: 160px;
+      width: 180px;
     }
   }
 
