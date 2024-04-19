@@ -15,7 +15,7 @@ import ArrowDownSvg from '../icons/ArrowDownSvg.vue';
           <h1 class="title">Management</h1>
           <h1 class="title">Rentals</h1>
         </div>
-
+        
         <router-link to="/about">
           <button class="action-button">Explore</button>
         </router-link>
