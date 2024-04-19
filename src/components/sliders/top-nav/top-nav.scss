@@ -83,7 +83,7 @@
         &:hover {
           background-color: var(--gray-mute);
         }
-        .paragrah {
+        .link {
           font-size: 18px;
         }
       }
@@ -101,7 +101,6 @@
         padding-left: 24px;
       }
 
-
       .social-list {
         padding-top: 10px;
 
@@ -113,6 +112,10 @@
           width: 49px;
           height: 49px;
           cursor: pointer;
+
+          :hover {
+            background-color: var(--primary);
+          }
         }
       }
 

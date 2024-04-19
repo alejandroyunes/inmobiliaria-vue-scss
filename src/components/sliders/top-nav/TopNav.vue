@@ -30,19 +30,27 @@ const { toggleTopNav, isTopNavOpen } = defineProps<Props>()
     <div class="top-nav-content">
       <ul class="list">
         <li class="item">
-          <p class="paragrah">Facebook</p>
+          <router-link to="/" class="link">
+            Home
+          </router-link>
         </li>
 
         <li class="item">
-          <p class="paragrah">Instagram</p>
+          <router-link to="/" class="link">
+            About
+          </router-link>
         </li>
 
         <li class="item">
-          <p class="paragrah">Twitter</p>
+          <router-link to="/" class="link">
+            Services
+          </router-link>
         </li>
-        
+
         <li class="item">
-          <p class="paragrah">Youtube</p>
+          <router-link to="/" class="link">
+            Contact
+          </router-link>
         </li>
       </ul>
 
