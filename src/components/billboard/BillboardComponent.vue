@@ -11,7 +11,6 @@ import ArrowDownSvg from '../icons/ArrowDownSvg.vue';
           <h3>Seamless booking and property management</h3>
         </div>
         <div>
-
           <h1 class="title">Luxury Stays &</h1>
           <h1 class="title">Management</h1>
           <h1 class="title">Rentals</h1>
