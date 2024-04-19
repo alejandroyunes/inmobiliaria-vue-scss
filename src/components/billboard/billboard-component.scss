@@ -42,7 +42,8 @@
       }
     }
 
-    .title, .title-hightlight {
+    .title,
+    .title-hightlight {
       color: var(--color-heading);
       line-height: 40px;
       font-size: 32px;
@@ -96,7 +97,7 @@
 .billboard-right {
   position: relative;
   height: calc(90vh);
-
+  animation: image-fade-in 1s .5s backwards;
   @media (max-width: 768px) {
     height: calc(80vh);
   }
@@ -127,20 +128,7 @@
       width: 180px;
     }
   }
-
-  .image-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-image: red;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: right;
-    animation: imageBgSlide 1s ease-out forwards;
-  }
 }
-
 
 @keyframes pointingDown {
   0% {
@@ -174,12 +162,14 @@
   }
 }
 
-@keyframes imageBgSlide {
+@keyframes image-fade-in {
   0% {
-    background-size: 100% 100%;
+    visibility: hidden;
+    opacity: 0;
   }
 
   100% {
-    background-size: 0% 100%;
+    visibility: visible;
+    opacity: 1;
   }
 }
