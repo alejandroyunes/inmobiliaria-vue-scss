@@ -17,11 +17,11 @@ const { toggleRightNav, isRightNavOpen } = defineProps<Props>()
 
 <template>
   <div :class="['right-nav-container', isRightNavOpen ? 'right-slide-in' : '', isRightNavOpen === false ? 'right-slide-out' : '']">
-    <div class="header">
+    <div class="right-nav-header">
       <p class="title">Estrella <span class="title-strong">Immobilien</span></p>
 
       <div @click="toggleRightNav" class="animation-exit">
-        <ExitSvg class=" exit-icon" />
+        <ExitSvg class="exit-icon" />
       </div>
     </div>
 
