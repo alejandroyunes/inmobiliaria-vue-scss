@@ -5,13 +5,15 @@ import ArrowDownSvg from '../icons/ArrowDownSvg.vue';
 
 <template>
   <section class="billboard-container">
+    
     <div class="billboard-left">
+
       <div class="billboard-title">
         <div class="slogan">
           <h3>Seamless booking and property management</h3>
         </div>
         <div>
-          <h1 class="title">Luxury Stays &</h1>
+          <h1 class="title hightlight">Luxury Stays &</h1>
           <h1 class="title">Management</h1>
           <h1 class="title">Rentals</h1>
         </div>
@@ -20,6 +22,7 @@ import ArrowDownSvg from '../icons/ArrowDownSvg.vue';
           <button class="action-button">Explore</button>
         </router-link>
       </div>
+
       <div class="billboard-arrow">
         <div class="arrow-rotate">
           <div class="arrow">
