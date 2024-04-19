@@ -17,8 +17,9 @@ const { toggleTopNav, isTopNavOpen } = defineProps<Props>()
 
 <template>
 
-  <div :class="['top-nav-container', isTopNavOpen ? 'top-slide-in' : '', isTopNavOpen === false ? 'top-slide-out' : '']">
-    <div class="header">
+  <div
+    :class="['top-nav-container', isTopNavOpen ? 'top-slide-in' : '', isTopNavOpen === false ? 'top-slide-out' : '']">
+    <div class="top-nav-header">
       <p class="title">Estrella <span class="title-strong">Immobilien</span></p>
 
       <div @click="toggleTopNav" class="animation-exit">
@@ -29,32 +30,42 @@ const { toggleTopNav, isTopNavOpen } = defineProps<Props>()
     <div class="top-nav-content">
       <ul class="list">
         <li class="item">
-          <span class="svg">
-            <Facebook class="icon" />
-          </span>
           <p class="paragrah">Facebook</p>
         </li>
+
         <li class="item">
-          <span class="svg">
-            <Instagram />
-          </span>
           <p class="paragrah">Instagram</p>
         </li>
+
         <li class="item">
-          <span class="svg">
-            <Twitter />
-          </span>
           <p class="paragrah">Twitter</p>
         </li>
+        
         <li class="item">
-          <span class="svg">
-            <Youtube />
-          </span>
           <p class="paragrah">Youtube</p>
         </li>
       </ul>
 
       <div class="contact">
+
+        <div class="social-list">
+          <span class="svg">
+            <Facebook class="icon" />
+          </span>
+
+          <span class="svg">
+            <Instagram />
+          </span>
+
+          <span class="svg">
+            <Twitter />
+          </span>
+
+          <span class="svg">
+            <Youtube />
+          </span>
+        </div>
+
         <p class="contact-tel"><a href="tel:+41787746337">+41 78 774 63 37</a></p>
         <p class="contact-email">
           <a href="mailto:matthias.schulz@estrella-immobilien.ch">matthias.schulz@estrella-immobilien.ch</a>
