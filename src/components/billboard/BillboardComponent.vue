@@ -34,7 +34,6 @@ import ArrowDownSvg from '../icons/ArrowDownSvg.vue';
 
     <div class="billboard-right">
       <img class="billboard-image" src="/images/billboard/home-billboard.webp" alt="alt" />
-      <div class="image-bg" />
     </div>
 
   </section>

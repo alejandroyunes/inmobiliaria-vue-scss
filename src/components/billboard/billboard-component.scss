@@ -97,7 +97,7 @@
 .billboard-right {
   position: relative;
   height: calc(90vh);
-  animation: image-fade-in 1s .5s backwards;
+  animation: image-fade-in 1s 0.5s backwards;
   @media (max-width: 768px) {
     height: calc(80vh);
   }
@@ -122,6 +122,7 @@
 
     @media (max-width: 500px) {
       width: 220px;
+      object-position: 23% 25%;
     }
 
     @media (max-width: 400px) {
