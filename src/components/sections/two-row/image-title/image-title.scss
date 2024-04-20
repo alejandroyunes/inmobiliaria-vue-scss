@@ -1,61 +1,76 @@
 .image-title-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 80px 20px 0;
 
   @media (max-width: 900px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .image-title-left {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    position: relative;
-    .image-one {
-      position: absolute;
-      align-self: center;
-      z-index: 10;
-      position: relative;
-    }
-
-    .image-two {
-      transform: scaleX(-1);
-      height: 380px;
-      right: 0;
-    }
-  }
-
-  .image-title-right {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
+  }
+}
 
-    .slogan {
-      font-size: 16px;
-      font-weight: bold;
-      color: var(--color-gray);
-      padding-bottom: 30px;
-    }
+.image-title-left {
+  position: relative;
+  width: 50%;
 
-    .title {
-      font-size: 20px;
-      font-weight: bold;
-      padding-bottom: 26px;
-    }
+  .image-one {
+    height: 400px;
+    margin-left: 50px;
 
-    .description {
-      padding-bottom: 24px;
+    @media (max-width: 1048px) {
+      height: 300px;
     }
+    @media (max-width: 900px) {
+      margin-left: 0;
+    }
+  }
+  .image-two {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    height: 200px;
 
-    .date-top {
-      padding-bottom: 30px;
+    @media (max-width: 1048px) {
+      height: 160px;
     }
+    @media (max-width: 768px) {
+      height: 140px;
+      right: 20px;
+    }
+    @media (max-width: 600px) {
+      right: 20px;
+    }
+  }
+}
 
-    .date-bottom {
-      padding-bottom: 26px;
-    }
+.image-title-right {
+  width: 45%;
+
+  @media (max-width: 900px) {
+    padding-top: 20px;
+    width: 100%;
+  }
+  .slogan {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--color-heading);
+  }
+
+  .description {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .date {
+    font-size: 14px;
+    margin-top: 10px;
   }
 }

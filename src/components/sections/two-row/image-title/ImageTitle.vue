@@ -5,10 +5,10 @@ import './image-title.scss'
 <template>
   <section class="image-title-container">
     <div class="image-title-left">
-      <div class="image-one">
-        <img src="/images/widgets/about4.webp" alt="alt" />
-      </div>
-      <img src="/images/widgets/about7.webp" alt="alt" class="image-two" />
+
+      <img src="/images/widgets/about7.webp" alt="alt" class="image-one" />
+
+      <img src="/images/widgets/about4.webp" alt="alt" class="image-two" />
     </div>
 
     <div class="image-title-right">
@@ -16,8 +16,8 @@ import './image-title.scss'
       <p class="title">Your vacation home, effortlessly cared for.</p>
       <p class="description">We showcase your property to a global audience, attracting high-quality travelers for
         short-term stays or long-term leases.</p>
-      <p class="date-top">MON-FRI: 9 AM – 22 PM</p>
-      <p class="date-bottom">SATURDAY: 9 AM – 20 PM</p>
+      <p class="date">MON-FRI: 9 AM – 22 PM</p>
+      <p class="date">SATURDAY: 9 AM – 20 PM</p>
     </div>
   </section>
 </template>

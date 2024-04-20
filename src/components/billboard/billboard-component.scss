@@ -17,7 +17,6 @@
   flex-direction: column;
   justify-content: space-between;
   height: calc(90vh);
-
   @media (max-width: 768px) {
     height: calc(80vh);
   }
@@ -107,7 +106,7 @@
     object-fit: cover;
     height: calc(90vh);
     transform: perspective(500px) rotateY(-10deg) scale(0.9);
-
+    margin-top: 10px;
     @media (max-width: 1024px) {
       width: 500px;
       height: calc(80vh);
