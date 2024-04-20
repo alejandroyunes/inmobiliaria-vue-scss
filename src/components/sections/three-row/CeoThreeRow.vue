@@ -32,5 +32,6 @@ import './ceo-three-row.scss'
       <p>Tailored, safe, and fully furnished luxury vacation rentals with exceptional amenities, reflecting the vision
         of our CEO for unparalleled hospitality.</p>
     </div>
+    
   </section>
 </template>

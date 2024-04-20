@@ -9,31 +9,31 @@
   @media (max-width: 900px) {
     grid-template-columns: repeat(1, 1fr);
   }
-}
 
-.ceo-three-row-left {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  .ceo-info {
+  .ceo-three-row-left {
     display: flex;
-    flex-direction: row;
-    gap: 24px;
+    flex-direction: column;
+    gap: 20px;
 
-    .ceo-image {
-      border-radius: 50%;
-    }
+    .ceo-info {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
 
-    .ceo-name {
-      font-weight: bold;
+      .ceo-image {
+        border-radius: 50%;
+      }
+
+      .ceo-name {
+        font-weight: bold;
+      }
     }
   }
-}
 
-.first-letter {
-  font-size: 48px;
-  float: left;
-  line-height: 1;
-  padding-right: 24px;
+  .first-letter {
+    font-size: 48px;
+    float: left;
+    line-height: 1;
+    padding-right: 24px;
+  }
 }
