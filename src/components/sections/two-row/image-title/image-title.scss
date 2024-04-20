@@ -1,0 +1,61 @@
+.image-title-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin: 0 auto;
+  max-width: var(--max-width);
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image-title-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    position: relative;
+    .image-one {
+      position: absolute;
+      align-self: center;
+      z-index: 10;
+      position: relative;
+    }
+
+    .image-two {
+      transform: scaleX(-1);
+      height: 380px;
+      right: 0;
+    }
+  }
+
+  .image-title-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .slogan {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--color-gray);
+      padding-bottom: 30px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      padding-bottom: 26px;
+    }
+
+    .description {
+      padding-bottom: 24px;
+    }
+
+    .date-top {
+      padding-bottom: 30px;
+    }
+
+    .date-bottom {
+      padding-bottom: 26px;
+    }
+  }
+}
