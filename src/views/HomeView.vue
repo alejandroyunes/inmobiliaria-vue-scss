@@ -5,6 +5,6 @@ import ImageTitle from '@/components/sections/two-row/image-title/ImageTitle.vue
 
 
 <template>
-  <!-- <BillboardComponent /> -->
+  <BillboardComponent />
   <ImageTitle />
 </template>
