@@ -1,4 +1,4 @@
-.ceo-three-row-container {
+.ceo-container {
   display: grid;
   grid-template-columns: 1.7fr 1fr 1fr;
   gap: 20px;
@@ -9,12 +9,24 @@
   @media (max-width: 900px) {
     grid-template-columns: repeat(1, 1fr);
   }
+  .ceo-description {
+    color: var(--color-heading);
+  }
 
-  .ceo-three-row-left {
+  .first-letter {
+    font-size: 48px;
+    float: left;
+    line-height: 1;
+    padding-right: 24px;
+    color: var(--color-heading);
+
+  }
+
+  .ceo-left {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
+        
     .ceo-info {
       display: flex;
       flex-direction: row;
@@ -26,14 +38,10 @@
 
       .ceo-name {
         font-weight: bold;
+        color: var(--color-heading);
       }
     }
   }
 
-  .first-letter {
-    font-size: 48px;
-    float: left;
-    line-height: 1;
-    padding-right: 24px;
-  }
+
 }

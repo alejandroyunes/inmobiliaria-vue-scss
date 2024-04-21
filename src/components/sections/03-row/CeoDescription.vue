@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import './ceo-three-row.scss'
+import './ceo-description.scss'
 </script>
 
 <template>
-  <section class="ceo-three-row-container">
-    <div class="ceo-three-row-left">
+  <section class="ceo-container">
+    <div class="ceo-left">
       
-      <p>
+      <p class="ceo-description">
         Meticulously designed to offer everything for a comfortable long or short term stay, from essential modern
         amenities to unexpected luxuries like a pool, private gym, or a breathtaking rooftop terrace.
       </p>
@@ -24,12 +24,12 @@ import './ceo-three-row.scss'
 
     <div>
       <span class="first-letter">L</span>
-      <p>Luxurious short-term and monthly stays, personalized service, exclusive homes, ideal for extended visits,
+      <p class="ceo-description">Luxurious short-term and monthly stays, personalized service, exclusive homes, ideal for extended visits,
         renovations, or work relocations. </p>
     </div>
 
     <div>
-      <p>Tailored, safe, and fully furnished luxury vacation rentals with exceptional amenities, reflecting the vision
+      <p class="ceo-description">Tailored, safe, and fully furnished luxury vacation rentals with exceptional amenities, reflecting the vision
         of our CEO for unparalleled hospitality.</p>
     </div>
     
