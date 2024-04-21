@@ -8,8 +8,8 @@ import GetInTouch from '@/components/sections/02-row/get-in-touch/GetInTouch.vue
 </script>
 
 <template>
-  <BillboardComponent />
-  <ImageTitle />
+  <!-- <BillboardComponent />
+  <ImageTitle /> -->
   <CeoDescription />
   <ImageDescription />
   <PartnersComponent />
