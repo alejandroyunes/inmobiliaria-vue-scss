@@ -1,0 +1,70 @@
+.get-in-touch-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  margin: 80px auto 0;
+  max-width: var(--max-width);
+  padding: 0 20px;
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .get-in-touch-left {
+    .slogan {
+      font-weight: bold;
+      font-size: 24px;
+      color: var(--color-heading);
+
+    }
+    .title {
+      font-size: 32px;
+      margin-bottom: 16px;
+      color: var(--primary);
+    }
+    .description {
+      font-size: 18px;
+      color: var(--color-heading);
+      margin-bottom: 24px;
+    }
+  }
+
+  .get-in-touch-right {
+    display: flex;
+    flex-direction: column;
+    .column {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 24px;
+
+      .icon-bg {
+        width: 40px;
+        height: 40px;
+        background-color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 16px;
+
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+
+    .location-details {
+      max-width: 200px;
+      display: flex;
+      flex-direction: column;
+      .address {
+        font-size: 40px;
+        color: var(--color-heading);
+        font-weight: bold;
+      }
+      .details {
+        font-size: 20px;
+        color: var(--color-heading);
+      }
+    }
+  }
+}
