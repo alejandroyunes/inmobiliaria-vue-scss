@@ -6,9 +6,9 @@ import './image-title.scss'
   <section class="image-title-container">
     <div class="image-title-left">
 
-      <img src="/images/widgets/about7.webp" alt="alt" class="image-one" />
+      <img src="/images/widgets/02-row/image-title/image-one.webp" alt="alt" class="image-one" />
 
-      <img src="/images/widgets/about4.webp" alt="alt" class="image-two" />
+      <img src="/images/widgets/02-row/image-title/image-two.webp" alt="alt" class="image-two" />
     </div>
 
     <div class="image-title-right">

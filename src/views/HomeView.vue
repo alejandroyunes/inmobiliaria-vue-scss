@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import BillboardComponent from '@/components/billboard/BillboardComponent.vue'
-import ImageTitle from '@/components/sections/two-row/image-title/ImageTitle.vue'
-import CeoThreeRow from '@/components/sections/three-row/CeoThreeRow.vue'
-import ImageDescription from '@/components/sections/three-row/image-description/ImageDescription.vue';
+import ImageTitle from '@/components/sections/02-row/image-title/ImageTitle.vue'
+import CeoThreeRow from '@/components/sections/03-row/CeoThreeRow.vue'
+import ImageDescription from '@/components/sections/03-row/image-description/ImageDescription.vue'
+import PartnersComponent from '@/components/sections/01-row/partners/PartnersComponent.vue'
+
 </script>
 
 
@@ -11,4 +13,5 @@ import ImageDescription from '@/components/sections/three-row/image-description/
   <ImageTitle />
   <CeoThreeRow />
   <ImageDescription />
+  <PartnersComponent />
 </template>
