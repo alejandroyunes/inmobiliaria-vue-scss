@@ -1,0 +1,108 @@
+.footer-container {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 0.4fr 0.8fr 0.7fr 0.3fr;
+  margin: 80px auto;
+  max-width: var(--max-width);
+  gap: 20px;
+  padding: 0 20px;
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .title {
+    font-size: 18px;
+    padding-bottom: 8px;
+
+    .capital {
+      font-size: 32px;
+      color: var(--color-heading);
+    }
+
+    .invest {
+      font-size: 32px;
+      color: var(--primary);
+      font-weight: bold;
+    }
+  }
+
+  .map {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .address {
+    max-width: 300px;
+    font-size: 18px;
+    color: var(--color-heading);
+
+    .title {
+      color: var(--color-heading);
+      font-size: 24px;
+    }
+
+    .info {
+      padding-bottom: 4px;
+    }
+
+    .tel {
+      display: flex;
+      margin-bottom: 8px;
+      font-size: 18px;
+      color: var(--color-heading);
+    }
+  }
+
+  .links {
+
+    .title {
+      color: var(--color-heading);
+      font-size: 24px;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      .link {
+        display: flex;
+        text-decoration: none;
+      }
+
+      .item {
+        padding: 4px 0;
+
+        .span {
+          z-index: 10;
+          cursor: pointer;
+          font-size: 18px;
+          color: var(--color-heading);
+          background-image: linear-gradient(to right, var(--color-heading) 100%, transparent 100%);
+          padding-bottom: 2px;
+          background-repeat: no-repeat;
+          background-position: 0 100%;
+          background-size: 0% 2px;
+          transition:
+            background-size 0.3s,
+            background-position 0s 0.3s;
+
+          &:hover {
+            background-position: 100% 100%;
+            background-size: 100% 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #e2e8f0;
+  padding: 16px 0;
+  margin: 0 auto;
+  text-align: center;
+  max-width: var(--max-width);
+}
