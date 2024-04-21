@@ -29,7 +29,7 @@ import './ceo-description.scss'
         renovations, or work relocations. </p>
     </div>
 
-    <div>
+    <div class="ceo-last">
       <p>Tailored, safe, and fully furnished luxury vacation rentals with exceptional amenities,
         reflecting the vision
         of our CEO for unparalleled hospitality.</p>
