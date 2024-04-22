@@ -37,7 +37,7 @@ const handleClick = (url: string) => {
 
     <div class="top-nav-content">
       <ul class="list">
-        <li class="item" @click="handleClick('home')">
+        <li class="item" @click="handleClick('/')">
           Home
         </li>
         <li class="item" @click="handleClick('about')">
