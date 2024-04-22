@@ -7,7 +7,7 @@ import './ceo-description.scss'
 
     <div class="ceo-info">
       <div>
-        <img class="ceo-image" src="/images/widgets/widget-ceo1.webp" alt="alt" width="78" height="78" />
+        <img class="ceo-image" src="/images/sections/widget-ceo1.webp" alt="alt" width="78" height="78" />
       </div>
       <div>
         <p class="ceo-name">Matthias Nadler</p>

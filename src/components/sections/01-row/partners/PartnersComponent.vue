@@ -6,10 +6,10 @@ import './partners-component.scss'
   <section class="partners-container">
     
     <div class="partners-logos">
-      <img class="logo" src="/images/widgets/01-row/partners/partner1.webp" alt="partner-logo 1" />
-      <img class="logo" src="/images/widgets/01-row/partners/partner2.webp" alt="partner-logo 2" />
-      <img class="logo" src="/images/widgets/01-row/partners/partner4.webp" alt="partner-logo 4" />
-      <img class="logo" src="/images/widgets/01-row/partners/partner5.webp" alt="partner-logo 5" />
+      <img class="logo" src="/images/sections/01-row/partners/partner1.webp" alt="partner-logo 1" />
+      <img class="logo" src="/images/sections/01-row/partners/partner2.webp" alt="partner-logo 2" />
+      <img class="logo" src="/images/sections/01-row/partners/partner4.webp" alt="partner-logo 4" />
+      <img class="logo" src="/images/sections/01-row/partners/partner5.webp" alt="partner-logo 5" />
     </div>
 
     <div class="partners-title">
@@ -19,4 +19,4 @@ import './partners-component.scss'
   </section>
 </template>
 
-inmobiliaria\public\images\widgets\01-row\partners\partner1.webp
+inmobiliaria\public\images\sections\01-row\partners\partner1.webp

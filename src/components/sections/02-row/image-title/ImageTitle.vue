@@ -6,8 +6,8 @@ import './image-title.scss'
   <section class="image-title-container">
     <div class="image-title-left">
 
-      <img src="/images/widgets/02-row/image-title/image-one.webp" alt="alt" class="image-one" />
-      <img src="/images/widgets/02-row/image-title/image-two.webp" alt="alt" class="image-two" />
+      <img src="/images/sections/02-row/image-title/image-one.webp" alt="alt" class="image-one" />
+      <img src="/images/sections/02-row/image-title/image-two.webp" alt="alt" class="image-two" />
     
     </div>
 

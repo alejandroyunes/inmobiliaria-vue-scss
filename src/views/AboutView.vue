@@ -1,15 +1,7 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<script lang="ts" setup>
+import TitleHeader from '@/components/sections/01-row/title-header/TitleHeader.vue'
+</script>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<template>
+  <TitleHeader />
+</template>
