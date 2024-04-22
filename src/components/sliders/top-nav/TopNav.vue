@@ -1,10 +1,13 @@
 <script lang="ts" setup>
 import './top-nav.scss'
+import { useRouter } from 'vue-router'
 import Twitter from '@/components/icons/social-media/TwitterSvg.vue'
 import ExitSvg from '@/components/icons/ExitSvg.vue'
 import Youtube from '@/components/icons/social-media/YoutubeSvg.vue'
 import Facebook from '@/components/icons/social-media/FacebookSvg.vue'
 import Instagram from '@/components/icons/social-media/InstagramSvg.vue'
+
+const router = useRouter()
 
 interface Props {
   toggleTopNav: () => void
@@ -13,8 +16,8 @@ interface Props {
 
 const { toggleTopNav, isTopNavOpen } = defineProps<Props>()
 
-const handleClick = () => {
-  console.log('clicked')
+const handleClick = (url: string) => {
+  router.push(url)
   toggleTopNav()
 }
 
@@ -34,28 +37,17 @@ const handleClick = () => {
 
     <div class="top-nav-content">
       <ul class="list">
-        <li class="item" @click="handleClick">
-          <router-link to="/" class="link">
-            Home
-          </router-link>
+        <li class="item" @click="handleClick('home')">
+          Home
         </li>
-
-        <li class="item" @click="handleClick">
-          <router-link to="/about" class="link">
-            About
-          </router-link>
+        <li class="item" @click="handleClick('about')">
+          About
         </li>
-
-        <li class="item" @click="handleClick">
-          <router-link to="/services" class="link">
-            Services
-          </router-link>
+        <li class="item" @click="handleClick('services')">
+          Services
         </li>
-
-        <li class="item" @click="handleClick">
-          <router-link to="/contact" class="link">
-            Contact
-          </router-link>
+        <li class="item" @click="handleClick('contact')">
+          Contact
         </li>
       </ul>
 
