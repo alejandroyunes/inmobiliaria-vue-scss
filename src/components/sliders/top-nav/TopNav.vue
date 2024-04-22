@@ -13,6 +13,11 @@ interface Props {
 
 const { toggleTopNav, isTopNavOpen } = defineProps<Props>()
 
+const handleClick = () => {
+  console.log('clicked')
+  toggleTopNav()
+}
+
 </script>
 
 <template>
@@ -29,26 +34,26 @@ const { toggleTopNav, isTopNavOpen } = defineProps<Props>()
 
     <div class="top-nav-content">
       <ul class="list">
-        <li class="item">
+        <li class="item" @click="handleClick">
           <router-link to="/" class="link">
             Home
           </router-link>
         </li>
 
-        <li class="item">
-          <router-link to="/" class="link">
+        <li class="item" @click="handleClick">
+          <router-link to="/about" class="link">
             About
           </router-link>
         </li>
 
-        <li class="item">
-          <router-link to="/" class="link">
+        <li class="item" @click="handleClick">
+          <router-link to="/services" class="link">
             Services
           </router-link>
         </li>
 
-        <li class="item">
-          <router-link to="/" class="link">
+        <li class="item" @click="handleClick">
+          <router-link to="/contact" class="link">
             Contact
           </router-link>
         </li>
