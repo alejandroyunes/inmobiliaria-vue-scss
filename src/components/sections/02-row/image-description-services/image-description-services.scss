@@ -8,6 +8,7 @@
   margin: 80px auto 0;
 
   @media (max-width: 900px) {
+    margin: 40px auto 0;
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -21,6 +22,10 @@
 
 .main-middle {
   order: 1;
+
+  @media (max-width: 900px) {
+    order: -1;
+  }
 }
 
 .image {

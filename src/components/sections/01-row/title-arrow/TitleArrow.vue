@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import './title-arrow.scss'
-import ArrowDownSvg from "@/components/icons/ArrowDownSvg.vue"
+import ArrowDownSkinnySvg from "@/components/icons/ArrowDownSkinnySvg.vue"
 
 const { title } = defineProps<{
   title: string
@@ -15,7 +15,7 @@ const { title } = defineProps<{
         <p>{{ title }}</p>
       </div>
       <div class="arrow">
-        <ArrowDownSvg class="icon" />
+        <ArrowDownSkinnySvg class="icon" />
       </div>
     </div>
   </section>

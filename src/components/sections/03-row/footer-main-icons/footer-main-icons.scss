@@ -1,0 +1,26 @@
+.footer-main-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin: 48px auto 0;
+  justify-items: center;
+  line-height: 1.6;
+  color: var(--color-heading);
+  padding: 0 20px;
+  max-width: var(--max-width);
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 24px auto 0;
+  }
+
+  .svg {
+    text-align: center;
+    padding-bottom: 8px;
+  }
+
+  .tel, .email {
+    display: flex;
+    justify-content: center;
+    color: var(--color-heading);
+  }
+}
