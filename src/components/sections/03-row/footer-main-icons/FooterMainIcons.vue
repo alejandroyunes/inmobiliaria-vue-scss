@@ -12,7 +12,7 @@ import MapSvg from "@/components/icons/contact/MapSvg.vue"
 
       <div>
         <div class="svg">
-          <ClockSvg />
+          <ClockSvg class="icon" />
         </div>
         <p>Mon - Fri: 9 AM – 22 PM</p>
         <p>Saturday: 9 AM – 20 PM</p>
@@ -21,14 +21,14 @@ import MapSvg from "@/components/icons/contact/MapSvg.vue"
 
       <div>
         <div class="svg">
-          <MapSvg />
+          <MapSvg class="icon" />
         </div>
         <p>Grützenstrasse 18807 FreienbachSchweiz</p>
       </div>
 
       <div>
         <div class="svg">
-          <Phone />
+          <Phone class="icon" />
         </div>
         <a class="tel" href="tel:+41787746337">+41 78 774 63 37</a>
         <a class="email" href="mailto:matthias.schulz@estrella-immobilien.ch">matthias.schulz@estrella-immobilien.ch</a>

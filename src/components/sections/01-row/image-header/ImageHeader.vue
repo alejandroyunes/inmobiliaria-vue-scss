@@ -24,3 +24,5 @@ const { imageUrl, title } = defineProps<ImageHeaderProps>()
     </div>
   </section>
 </template>
+
+<style scoped></style>

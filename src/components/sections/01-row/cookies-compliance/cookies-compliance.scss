@@ -1,0 +1,31 @@
+.cookies-compliance-outer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cookies-compliance-button {
+    color: var(--white);
+    border: none;
+    padding: 16px 32px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 8px;
+    background-color: var(--primary);
+  }
+}
+
+
